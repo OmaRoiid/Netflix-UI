@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <title>Netflix | Forget</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/forget.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> 
+    <script src="/path/to/cdn/jquery.min.js"></script>
+<script src="/path/to/countrySelect.js"></script>
+    <script>
+       window.onload = function() {
+ $("#bxid_resetPasswordChoice_email").on("click",function(){
+   $("#text").html("We will send you an email with instructions on how to reset your password.");
+   $("#selectbtn").html("Email me")
+   $("#forgot_password_input").attr("placeholder", "name@example.com");
+ })
+ $("#bxid_resetPasswordChoice_text").on("click",function(){
+   $("#text").html("We will text you a verification code to reset your password. Text fees may apply.");
+   $("#selectbtn").html("Text me")
+   $("#forgot_password_input").attr("placeholder", "+20");
+ })
+};
+    </script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="logo">
+      <img src="../img/netflix.png" />
+    </div>
+    <div class="container">
+      <div class="d-flex justify-content-center h-100">
+        <div class="card">
+          <div class="card-headerr">
+            <h3>Forgot Email/Password</h3>
+            <h6> How would you like to reset your password?</h6>
+            <div class="reset-choice-container" data-uia="reset-choice-container">
+                <div class="ui-binary-input row">
+                    <input type="radio" class="reset-password-choice" name="resetPasswordChoice" id="bxid_resetPasswordChoice_email" value="email" tabindex="0" data-uia="resetPasswordChoice" checked="true">
+                    <label for="bxid_resetPasswordChoice_email" data-uia="label+resetPasswordChoice">Email</label>
+                    <div class="helper">
+                    </div>
+                </div>
+                <div class="ui-binary-input row">
+                    <input type="radio" class="reset-password-choice" name="resetPasswordChoice" id="bxid_resetPasswordChoice_text" value="text" tabindex="0" data-uia="resetPasswordChoice">
+                    <label for="bxid_resetPasswordChoice_text" data-uia="label+resetPasswordChoice">Text Message (SMS)</label>
+                    <div class="helper">
+                    </div>
+                </div>
+                <p id="text">
+                    We will send you an email with instructions on how to reset your password.
+                </p>
+            </div>
+            <form>
+            <input type="email" data-uia="forgot_password_input" class="ui-text-input error" name="forgot_password_input" id="forgot_password_input" placeholder="name@example.com"
+            tabindex="0" required>
+            <div>
+                <button id="selectbtn"type="submit" class="submit btn btn-primary btn-lg btn-block"> Email Me </button>
+            </div>
+          </form>
+          </div>
+          <a class=""> I don't remember my email or phone.</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="container" style="padding: 15px 25px;">
+        <a style="justify-content: center;"> Questions? Contact us.</a>
+        <div class="about row">
+          <div class=" links row col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12" style="display: flex; flex-direction: column;">
+          <a href="../contact.html"> FAQ </a>
+          <a> Cookie prefrerences</a>
+        </div>
+        <div class=" links row col-xl-3  col-lg-3 col-md-3 col-sm-6 col-12" style="display: flex; flex-direction: column;">
+          <a href="../helpcenter.html"> Help Center </a>
+          <a> Corporate Information</a>
+        </div>
+        <div class=" links row col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="display: flex; flex-direction: column;">
+          <a href="../terms.html"> Terms of Use </a>
+        </div>
+        <div class=" links row col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="display: flex; flex-direction: column;">
+          <a href="#"> Privacy </a>
+        </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            English
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">العربية</a>
+            <a class="dropdown-item" href="#">English</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

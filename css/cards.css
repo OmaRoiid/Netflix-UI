@@ -1,0 +1,94 @@
+body {
+  font-family: "Arimo", sans-serif;
+  color: white;
+  background-color: black;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  margin-top: 1rem;
+}
+.film-text {
+  width: 10rem;
+  display: flex;
+}
+.items li {
+  /* position: relative; */
+  vertical-align: middle;
+  display: inline-block;
+  list-style: none;
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.items li .bg-img {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+}
+
+.items li:hover {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  width: 400px;
+  height: 250px;
+}
+.items {
+  padding: 0;
+}
+.copy-right {
+  font-size: 0.8rem;
+}
+footer a,
+.copy-right {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer > p {
+  margin: 0 0 30px;
+}
+footer ul {
+  list-style: none;
+  margin: 0 0 16px;
+  padding-right: 12px;
+  min-width: 100px;
+  font-size: 13px;
+}
+footer ul li {
+  padding-top: 1rem;
+}
+#dropdown-list {
+  width: 30rem;
+  background-color: black;
+  opacity: 0.8;
+}
+#filter-list {
+  background: black;
+  opacity: 0.8;
+  color: white;
+}
+
+/* mediaQuary */
+@media (max-width: 1066px) {
+  .items li {
+    width: 300px;
+    height: 220px;
+    margin-top: 2rem;
+  }
+  .items li .bg-img {
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+  }
+}

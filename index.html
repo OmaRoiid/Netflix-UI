@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<title>Netflix</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/modal.css">
+	</head>
+	<body>
+		<nav
+			id="nav"
+			class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#" style="width: 75px">
+					<img
+						class="img-fluid"
+						src="images/Netflix-Logo.png"
+						alt="logo-netflix"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">TV Shows</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Movies</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="latest.html">Latest</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="cards.html">My List</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link mr-2" href="#">
+								<i class="fas fa-search"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link mr-2" href="refer/refer.html">
+								<i class="fas fa-gift"></i>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle notification"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<i class="fas fa-bell"></i>
+							</a>
+							<div
+								class="dropdown-menu drop-notification"
+								aria-labelledby="navbarDropdown"
+							>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie1.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie2.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie3.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie1.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<img class="img-fluid" src="images/pp.png" alt="pp" />
+							</a>
+							<div
+								class="dropdown-menu drop-profile"
+								aria-labelledby="navbarDropdown"
+								style="left: -130px"
+							>
+								<a class="dropdown-item" href="#">
+									<img class="img-fluid" src="images/pp.png" alt="pp" />
+									<span class="text-white ml-1">User 1</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img class="img-fluid" src="images/pp2.png" alt="pp" />
+									<span class="text-white ml-1">User 2</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img class="img-fluid" src="images/pp.png" alt="pp" />
+									<span class="text-white ml-1">User 3</span>
+								</a>
+								<a class="dropdown-item" href="#">Manage Profiles</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="account.html">Account</a>
+								<a class="dropdown-item" href="helpcenter.html">Help Center</a>
+								<a class="dropdown-item" href="wellcomepage/index.html">Sign out of Netflix</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<section class="background-intro position-relative">
+				<div class="overlay-intro position-absolute h-100 w-100">
+					<div class="caption">
+						<div class="bg-img">
+							<img class="img-fluid" src="images/back-name.webp" alt="name">
+						</div>
+						<div class="buttons mt-4 ml-5 ">
+							<button class="btn btn-light btn-lg my-btn-1"><i class="fas fa-play"></i> Play</button>
+							<button class="btn btn-light  btn-lg my-btn-2" data-toggle="modal" data-target="#myModal"><i class="fas fa-info-circle"></i> More Info</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="cont">
+				<div class="carousel">
+				  
+				  <h1 id="home">Popular on Netflix</h1>
+				  <div class="carouselbox1">
+					<img class="img-1 slider-img" src="images/img1.jpg" />
+					<img class="img-1 slider-img" src="images/img2.jpg" />
+					<img class="img-1 slider-img" src="images/img3.jpg" />
+					<img class="img-1 slider-img" src="images/img4.jpg" />
+					<img class="img-1 slider-img" src="images/img5.jpg" />
+					<img class="img-1 slider-img" src="images/img6.jpg" />
+					<img class="img-1 slider-img" src="images/img7.jpg" />
+					<img class="img-1 slider-img" src="images/img8.jpg" />
+					<img class="img-1 slider-img" src="images/img9.jpg" />
+					 <img class="img-1 slider-img" src="images/img10.jpg" />
+					 <img class="img-1 slider-img" src="images/img11.jpg" />
+					 <img class="img-1 slider-img" src="images/img12.jpg" />
+			
+				  </div>
+			
+				  <a class="switchLeft sliderButton" onclick="sliderScrollLeft1()"><span><</span></a>
+				  <a class="switchRight sliderButton" onclick="sliderScrollRight1()"><span>></span></a>
+				</div>
+			
+				<div class="carousel">
+				  <h1 id="movies">Blockbuster </h1>
+				  <div class="carouselbox2">
+					  <img class="img-1 slider-img" src="images/img13.jpg" />
+					<img class="img-1 slider-img" src="images/img14.jpg" />
+					<img class="img-1 slider-img" src="images/img15.jpg" />
+					<img class="img-1 slider-img" src="images/img16.jpg" />
+					<img class="img-1 slider-img" src="images/img17.jpg" />
+					<img class="img-1 slider-img" src="images/img18.jpg" />
+					<img class="img-1 slider-img" src="images/img19.jpg" />
+					<img class="img-1 slider-img" src="images/img20.jpg" />
+					<img class="img-1 slider-img" src="images/img1.jpg" />
+					 <img class="img-1 slider-img" src="images/img2.jpg" />
+					 <img class="img-1 slider-img" src="images/img3.jpg" />
+					 <img class="img-1 slider-img" src="images/img4.jpg" />
+				  </div>
+			
+				  <a class="switchLeft sliderButton" onclick="sliderScrollLeft2()"><span><</span></a>
+				  <a class="switchRight sliderButton" onclick="sliderScrollRight2()"><span>></span></a>
+				</div>
+				<div class="carousel">
+				  <h1 id="tvShows">TV Shows</h1>
+				  <div class="carouselbox3">
+					<img class="img-1 slider-img" src="images/img7.jpg" />
+					<img class="img-1 slider-img" src="images/img9.jpg" />
+					<img class="img-1 slider-img" src="images/img13.jpg" />
+					<img class="img-1 slider-img" src="images/img17.jpg" />
+					<img class="img-1 slider-img" src="images/img20.jpg" />
+					<img class="img-1 slider-img" src="images/img12.jpg" />
+					<img class="img-1 slider-img" src="images/img10.jpg" />
+					<img class="img-1 slider-img" src="images/img8.jpg" />
+					<img class="img-1 slider-img" src="images/img18.jpg" />
+					 <img class="img-1 slider-img" src="images/img1.jpg" />
+					 <img class="img-1 slider-img" src="images/img5.jpg" />
+					 <img class="img-1 slider-img" src="images/img14.jpg" />
+				  </div>
+			
+				  <a class="switchLeft sliderButton" onclick="sliderScrollLeft3()"><span><</span></a>
+				  <a class="switchRight sliderButton" onclick="sliderScrollRight3()"><span>></span></a>
+				</div>
+			  </div>
+		</main>
+		<!-- ===========================================Selema========================================= -->
+	
+		 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="vertical-alignment-helper">
+				<div class="modal-dialog modal-lg vertical-align-center">
+					<div class="modal-content">
+						<div class="modal-header">
+						</div>
+						<div class="modal-body">
+	
+							<div class="previewModal--player-titleTreatmentWrapper" style="opacity: 1;">
+	
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+	
+								</button>
+								<div>
+	
+									<video class="video-fluid w-100" autoplay playsinline loop controls muted>
+	
+										<source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+									</video>
+								</div>
+	
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="row">
+											<span class="new">New</span>
+											<span class="year">2020</span>
+											<span class="age">+18</span>
+	
+											<span class="year">
+												<span class="test_dur_str">1 Season</span>
+											</span>
+										</div>
+										<div>
+											<div class="supplemental-message">Watch Season 1 now</div>
+											<p class="preview-modal-synopsis previewModal--text" data-uia="preview-modal-synopsis">Dead doesn't mean gone. An au pair plunges into an abyss of chilling secrets in this gothic romance from the creator of "The Haunting of Hill House."</p>
+										</div>
+									</div>
+	
+									<div class="col-lg-4">
+										<div>
+											<div>
+												<span class="tag-title">Cast:</span>
+												<span class="tag-item">
+													<a href="#"> Victoria Pedretti, </a>
+												</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#">Oliver Jackson-Cohen, </a>
+												</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#">Henry Thomas, </a>
+												</span>
+												<span class="tag-more" data-uia="tag-more">
+													<a href="#about">more</a>
+												</span>
+											</div>
+											<div>
+												<span class="tag-title">Genres:</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#"> TV Programmes Based on Books, </a>
+												</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#">Mystery Programmes, </a>
+												</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#">Drama Programmes</a>
+												</span>
+											</div>
+											<div>
+												<span class="tag-title">This programme is:</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#"> Ominous, </a>
+												</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#">Scary, </a>
+												</span>
+												<span class="tag-item" data-uia="tag-item">
+													<a href="#">Suspenseful</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<br><br><br>
+	
+								
+								<div class="titleCardList--container episode-item current row" tabindex="0" aria-label="Episode 1" data-uia="titleCard--container" role="button">
+									<div class="epo_number">1</div>
+									<div class="titleCard-imageWrapper">
+										<div class="ptrack-content" data-ui-tracking-context="%7B%22list_id%22:%22%22,%22location%22:%22homeScreen%22,%22rank%22:1,%22request_id%22:%22unknown%22,%22row%22:0,%22track_id%22:251734383,%22video_id%22:80187190,%22image_key%22:%22MERCH_STILL%7C60bed2f0-5615-11e7-89bc-129b144dfde0%7Cen%22,%22supp_video_id%22:1,%22lolomo_id%22:%22unknown%22,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="d227d369-0947-4de1-a845-f31ee084af3a">
+											<img src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABaxxxRDpfb4ajELwUVbD4S3PgKGNpDkpCdMwBCaQlZ1X6not7sr6W3E2_5VNCI2Wx-VfT8pfg1FD_17fhXi-lB9tzM84u1H0jB6wtIwNKEzUPyRA.webp?r=363" alt="Episode 1">
+										</div>
+										<div class="titleCard-playIcon">
+											<svg viewBox="0 0 24 24" class="titleCard-playSVG">
+												<path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="titleCardList--metadataWrapper">
+										<div class="titleCardList-title">
+											<span class="titleCard-title_text">Episode 1</span>
+											<span><span class="duration ellipsized">86m</span>
+										</span>
+									</div><p class="titleCard-synopsis previewModal--small-text">As a teen, prosecutor Hwang Si-mok received surgical treatment for his abnormally developed brain, but the procedure left behind serious side effects.</p>
+								</div>
+							</div>
+							<div class="titleCardList--container episode-item current row" tabindex="0" aria-label="Episode 1" data-uia="titleCard--container" role="button">
+								<div class="epo_number">2</div>
+								<div class="titleCard-imageWrapper">
+									<div class="ptrack-content" data-ui-tracking-context="%7B%22list_id%22:%22%22,%22location%22:%22homeScreen%22,%22rank%22:1,%22request_id%22:%22unknown%22,%22row%22:0,%22track_id%22:251734383,%22video_id%22:80187190,%22image_key%22:%22MERCH_STILL%7C60bed2f0-5615-11e7-89bc-129b144dfde0%7Cen%22,%22supp_video_id%22:1,%22lolomo_id%22:%22unknown%22,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="d227d369-0947-4de1-a845-f31ee084af3a">
+										<img src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABaxxxRDpfb4ajELwUVbD4S3PgKGNpDkpCdMwBCaQlZ1X6not7sr6W3E2_5VNCI2Wx-VfT8pfg1FD_17fhXi-lB9tzM84u1H0jB6wtIwNKEzUPyRA.webp?r=363" alt="Episode 1">
+									</div>
+									<div class="titleCard-playIcon">
+										<svg viewBox="0 0 24 24" class="titleCard-playSVG">
+											<path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+										</svg>
+									</div>
+								</div>
+								<div class="titleCardList--metadataWrapper">
+									<div class="titleCardList-title">
+										<span class="titleCard-title_text">Episode 2</span>
+										<span><span class="duration ellipsized">70m</span>
+									</span>
+								</div><p class="titleCard-synopsis previewModal--small-text">As a teen, prosecutor Hwang Si-mok received surgical treatment for his abnormally developed brain, but the procedure left behind serious side effects.</p>
+							</div>
+						</div>
+	
+						<div class="titleCardList--container episode-item current row" tabindex="0" aria-label="Episode 1" data-uia="titleCard--container" role="button">
+							<div class="epo_number">3</div>
+							<div class="titleCard-imageWrapper">
+								<div class="ptrack-content" data-ui-tracking-context="%7B%22list_id%22:%22%22,%22location%22:%22homeScreen%22,%22rank%22:1,%22request_id%22:%22unknown%22,%22row%22:0,%22track_id%22:251734383,%22video_id%22:80187190,%22image_key%22:%22MERCH_STILL%7C60bed2f0-5615-11e7-89bc-129b144dfde0%7Cen%22,%22supp_video_id%22:1,%22lolomo_id%22:%22unknown%22,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="d227d369-0947-4de1-a845-f31ee084af3a">
+									<img src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABaxxxRDpfb4ajELwUVbD4S3PgKGNpDkpCdMwBCaQlZ1X6not7sr6W3E2_5VNCI2Wx-VfT8pfg1FD_17fhXi-lB9tzM84u1H0jB6wtIwNKEzUPyRA.webp?r=363" alt="Episode 1">
+								</div>
+								<div class="titleCard-playIcon">
+									<svg viewBox="0 0 24 24" class="titleCard-playSVG">
+										<path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="titleCardList--metadataWrapper">
+								<div class="titleCardList-title">
+									<span class="titleCard-title_text">Episode 3</span>
+									<span><span class="duration ellipsized">65m</span>
+								</span>
+							</div><p class="titleCard-synopsis previewModal--small-text">As a teen, prosecutor Hwang Si-mok received surgical treatment for his abnormally developed brain, but the procedure left behind serious side effects.</p>
+						</div>
+					</div><br /><br />
+	
+								<h2>More like this</h2>
+	
+								<div class="row">
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+	
+								<div class="row">
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+								<div class="row collapse" id="demo">
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="card col-lg-4">
+										<div class="card-relevant">
+											<img src="img/tmntpizza.jpeg" class="card-img-top" alt="...">
+											<div class="card-body">
+												<span class="new" style="margin-left:1em">NEW</span>
+												<div class="row ml-2">
+													<span class="year">2020</span>
+													<span class="age">+18</span>
+												</div>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=" btn-collapse">
+									<button type="button" class="btn btn-danger btn-circle" data-toggle="collapse" data-target="#demo">
+										<i class="fa fa-arrow-down"></i>
+									</button>
+								</div>
+	
+								<div style="margin-top: 40px;">
+									<h2>About The Haunting of Bly Manor</h2>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- ==================================================================================== -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

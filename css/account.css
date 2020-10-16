@@ -1,0 +1,78 @@
+.my-4 {
+	background: rgb(83, 81, 81);
+	max-width: 95%;
+}
+.line {
+	max-width: 65%;
+	margin-right: 2rem;
+}
+
+.icon {
+	height: 8rem;
+	border-radius: 5px;
+}
+footer a,
+.copy-right {
+	color: rgb(73, 71, 71);
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer > p {
+	margin: 0 0 30px;
+}
+footer ul {
+	list-style: none;
+	margin: 0 0 16px;
+	padding-right: 12px;
+	min-width: 100px;
+	font-size: 13px;
+}
+footer ul li {
+	padding-top: 1rem;
+}
+.fa-arrow-down,
+.fa-lock {
+	font-size: 1.5rem;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.fa-arrow-down:hover,
+.fa-lock:hover {
+	color: rgb(23, 23, 184);
+}
+
+/* mediaQuary */
+@media (max-width: 768px) {
+	.line {
+		max-width: 100%;
+		max-width: 100%;
+	}
+	.links,
+	.details {
+		padding: 1rem;
+	}
+	.icon {
+		height: 10rem;
+		width: 15rem;
+		border-radius: 5px;
+		align-content: center;
+		text-align: center;
+	}
+}
+@media (max-width: 575.98px) {
+	img {
+		display: flex;
+		margin: auto;
+	}
+	.icon-body {
+		text-align: center;
+	}
+	.header {
+		display: flex;
+		margin: auto;
+	}
+}

@@ -1,0 +1,411 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #fff;
+    color: #221f1f;
+    font-family: Netflix Sans,Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 0 16px;
+}
+
+.global-container {
+    margin-bottom: -256px;
+    min-height: 100%;
+}
+
+.global-header {
+    position: relative;
+    background: #000;
+}
+.global-header>.container-nav {
+    position: relative;
+    padding-top: 16px;
+}
+
+.container-nav {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 48px;
+}
+
+.global-header .inner-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+
+
+.global-header .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0;
+    padding-right: 24px;
+}
+a {
+    color: #e50914;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+svg {
+    vertical-align: middle;
+    width: 88px;
+    height: 32px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+ .n-svg {
+    display: none;
+}
+svg:not(.n-svg), svg:not(.n-svg) path {
+    fill: currentColor;
+}
+
+.helpcenter-logo {
+    margin: 0;
+    font-size: 18px;
+    line-height: 32px;
+    white-space: nowrap;
+    color: #f5f5f1;
+
+}
+.helpcenter-logo:hover{
+color: white;
+text-decoration: underline;
+}
+
+
+.actions {
+    flex: 1 0;
+    float: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 0 16px;
+    justify-content: flex-end;
+}
+
+
+.btn.free-month, .global-header .actions .free-month.select {
+    height: auto;
+    flex-shrink: 1;
+    white-space: normal;
+}
+.btn, .global-header .actions .select {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px;
+    width: auto;
+    
+}
+
+
+.btn.btn-light {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+
+ .free-month.select {
+    height: auto;
+    flex-shrink: 1;
+    white-space: normal;
+}
+.netflix-svg:hover {
+    color: red;
+}
+ .select {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px;
+    width: auto;
+    
+}
+.btn-light.select, .btn.btn-light {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn, .select {
+ 
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Netflix Sans,Helvetica,Arial,sans-serif;
+  letter-spacing: .01em;
+    min-width: 96px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .15s ease,background-color .15s ease;
+    user-select: none;
+    vertical-align: middle;
+  
+}
+.btn:hover{
+background-color: #f5f5f1;
+color: #000;
+}
+.btn.sign-in-link, .global-header .actions .sign-in-link.select {
+    margin-left: 16px;
+}
+
+.global-header .actions .btn, .global-header .actions .select {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px;
+    width: auto;
+    flex-shrink: 0;
+}
+.btn.btn-primary {
+    background: #e50914;
+    border-color: #e50914;
+    color: #fff;
+}
+
+.global-header .logo-wrapper {
+    padding: 0 0 16px;
+    line-height: 18px;
+}
+.global-header .logo-wrapper .helpcenter-logo {
+    margin: 0;
+    color: #f5f5f1;
+    line-height: 18px;
+    font-weight: 800;
+}
+
+.global-content {
+    padding: 24px 0 32px;
+    min-height: 360px;
+}
+
+.btn.btn-lightgrey {
+    background: #fff;
+    border-color: #8b8a88;
+    color: #4c4948;
+}
+section {
+    display: block;
+}
+
+ ol {
+    list-style-type: decimal;
+    padding-left: 32px;
+}
+
+.page-block ol>li {
+    padding-left: 0;
+}
+.page-block ol li {
+    margin: 0 0 8px;
+    padding:0;
+    position: relative;
+}
+ li>p {
+    display: inline;
+}
+strong {
+    font-weight: 700;
+}
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+}
+ .underline {
+    text-decoration: underline;
+}
+.footer-push {
+    height: 40px;
+}
+.global-footer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    background: #221f1f;
+    display: block;
+    height: 250px;
+}
+.global-footer>.dark-area {
+    padding-bottom: 72px;
+    padding-top: 40px;
+}
+.global-footer .select-wrapper {
+    float: left;
+}
+.select-grey {
+    border:1px solid #8b8a88;
+    color: #8b8a88;
+}
+
+.dark-area .select {
+    padding: 0;
+    position: relative;
+}
+.dark-area .select {
+    padding: 0;
+    position: relative;
+}
+.dark-area .select {
+    font-size: 16px;
+    font-weight: 700;;
+    line-height: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Netflix Sans,Helvetica,Arial,sans-serif;
+    height: 48px;
+    letter-spacing: .01em;
+    min-width: 96px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .15s ease,background-color .15s ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;}
+
+    .select.select-grey select {
+        color: #fff;
+    }
+    .select-wrapper:hover{
+       color: #fff;
+        background-color:#8b8a88 ;
+    }
+   .dark-area .select select {
+        appearance: none;
+        font-size: 16px;
+        font-weight: 700;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        line-height: 20px;
+        outline: none;  
+        padding: 13px 45px 13px 16px;
+        position: relative;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+        z-index: 1;
+    }
+    .select select option {
+        color: #000;
+    }
+    .select.select-grey svg {
+        color: #fff;
+    }
+ 
+    .select>svg {
+        height: 24px;
+        pointer-events: none;
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        width: 24px;
+        z-index: 0;
+    }
+    .select>svg:hover{
+        color: #fff;
+    }
+    svg:not(.n-svg) path .n-svg{
+        fill: currentColor;
+    }
+    .global-footer .footer-links {
+        float: right;
+        margin: 0;
+    }
+    .global-footer .footer-links .legalese-item {
+        float: left;
+        margin-left: 32px;
+    }
+    .global-footer>.dark-area a {
+        color: #8b8a88;
+    }
+    .global-footer>.dark-area a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+    .global-footer .footer-links:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+@media (min-width: 600px){
+.global-header .branding .logo {
+    position: relative;
+    margin-right: 33px;
+}
+.helpcenter-logo {
+    display: block;
+    padding: 0;
+}
+.logo:after {
+    background: #f5f5f1;
+    content: "";
+    height: 24px;
+    left: 100%;
+    margin-left: 16px;
+    position: absolute;
+    top: 4px;
+    width: 1px;
+}
+.global-header .logo-wrapper {
+    display: none;
+}
+}
+@media (max-width: 600px){
+.global-header .branding .netflix-svg {
+    display: none;
+}
+.global-header .branding .n-svg {
+    display: block;
+}
+.branding .helpcenter-logo {
+    display: none;
+}
+
+.global-footer .footer-links {
+    float: none;
+}
+.global-footer .footer-links .legalese-item {
+    text-align: left;
+    
+    
+}
+.global-footer .select-wrapper {
+    float: none;
+    margin: 0 0 24px;
+    width: 58%;
+
+}
+}

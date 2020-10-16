@@ -1,0 +1,389 @@
+body {
+  height: 100%;
+  margin: 0;
+  background: rgb(245, 239, 239);
+  color: #221f1f;
+  font-family: Netflix Sans, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+}
+.welcome {
+  padding: 1rem;
+}
+.global-container {
+  margin-bottom: -256px;
+  min-height: 100%;
+}
+/* Header */
+.global-header {
+  position: relative;
+  background: #000;
+}
+.global-header > .container-nav {
+  position: relative;
+  padding-top: 16px;
+}
+
+.container-nav {
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 48px;
+}
+
+.global-header .inner-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.global-header .branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0 0;
+  padding-right: 24px;
+}
+a {
+  color: #e50914;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+svg {
+  vertical-align: middle;
+  width: 88px;
+  height: 32px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+:not(svg) {
+  transform-origin: 0px 0px;
+}
+
+.n-svg {
+  display: none;
+}
+svg:not(.n-svg),
+svg:not(.n-svg) path {
+  fill: currentColor;
+}
+
+.helpcenter-logo {
+  margin: 0;
+  font-size: 18px;
+  line-height: 32px;
+  white-space: nowrap;
+  color: #f5f5f1;
+}
+.helpcenter-logo:hover {
+  color: white;
+  text-decoration: underline;
+}
+.input-group {
+  max-width: 50%;
+}
+.helping-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.helping-center {
+  text-shadow: 2px 2px 10px black;
+}
+ul li a {
+  color: #999;
+}
+ul li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
+/* .actions {
+  flex: 1 0;
+  float: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 0 16px;
+  justify-content: flex-end;
+} */
+
+.btn.free-month,
+.global-header .actions .free-month.select {
+  height: auto;
+  flex-shrink: 1;
+  white-space: normal;
+}
+.btn,
+.global-header .actions .select {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px;
+  width: auto;
+}
+
+.btn.btn-light {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.free-month.select {
+  height: auto;
+  flex-shrink: 1;
+  white-space: normal;
+}
+.netflix-svg:hover {
+  color: red;
+}
+.select {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px;
+  width: auto;
+}
+.btn-light.select,
+.btn.btn-light {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn,
+.select {
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Netflix Sans, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+  min-width: 96px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.15s ease, background-color 0.15s ease;
+  user-select: none;
+  vertical-align: middle;
+}
+.btn:hover {
+  background-color: #f5f5f1;
+  color: #000;
+}
+.btn.sign-in-link,
+.global-header .actions .sign-in-link.select {
+  margin-left: 16px;
+}
+
+.global-header .actions .btn,
+.global-header .actions .select {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px;
+  width: auto;
+  flex-shrink: 0;
+}
+.btn.btn-primary {
+  background: #e50914;
+  border-color: #e50914;
+  color: #fff;
+}
+
+.global-header {
+  padding: 0 0 16px;
+  line-height: 18px;
+}
+.global-header {
+  margin: 0;
+  color: #f5f5f1;
+  line-height: 18px;
+  font-weight: 800;
+}
+/* Footer */
+.footer-push {
+  height: 256px;
+}
+.global-footer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #221f1f;
+  display: block;
+  height: 256px;
+}
+.global-footer > .dark-area {
+  padding-bottom: 72px;
+  padding-top: 40px;
+}
+.select-wrapper {
+  float: left;
+}
+.select.select-grey {
+  border-color: #8b8a88;
+  color: #8b8a88;
+}
+.dark-area .select {
+  padding: 0;
+  position: relative;
+}
+.select {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Netflix Sans, Helvetica, Arial, sans-serif;
+  height: 48px;
+  letter-spacing: 0.01em;
+  min-width: 96px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.15s ease, background-color 0.15s ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.select.select-grey select {
+  color: #a8a8a8;
+}
+.select-wrapper:hover {
+  color: #fff;
+  background-color: #a8a8a8;
+}
+.select select {
+  appearance: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  line-height: 20px;
+  outline: none;
+  padding: 13px 45px 13px 16px;
+  position: relative;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+}
+.select select option {
+  color: #000;
+}
+/*  */
+.select > svg {
+  height: 24px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 24px;
+  z-index: 0;
+}
+svg:hover {
+  color: #fff;
+}
+
+.global-footer .footer-links {
+  float: right;
+  margin: 0;
+}
+.legalese-item {
+  float: left;
+  margin-left: 32px;
+}
+.global-footer > .dark-area a {
+  color: #8b8a88;
+}
+.global-footer > .dark-area a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.global-footer .footer-links:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.select.select-grey select:hover {
+  color: #fff;
+}
+.global-header {
+  background: url("../images/helping\ centre.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem;
+}
+
+@media (min-width: 600px) {
+  .global-header .branding .logo {
+    position: relative;
+    margin-right: 33px;
+  }
+  .helpcenter-logo {
+    display: block;
+    padding: 0;
+  }
+  .logo:after {
+    background: #f5f5f1;
+    content: "";
+    height: 24px;
+    left: 100%;
+    margin-left: 16px;
+    position: absolute;
+    top: 4px;
+    width: 1px;
+  }
+  .links-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .global-header .branding .netflix-svg {
+    display: none;
+  }
+  .global-header .branding .n-svg {
+    display: block;
+  }
+  .branding .helpcenter-logo {
+    display: none;
+  }
+  .global-footer .footer-links {
+    float: none;
+  }
+  .global-footer .footer-links .legalese-item {
+    text-align: left;
+  }
+  .global-footer .select-wrapper {
+    float: none;
+    margin: 0 0 24px;
+    width: 50%;
+  }
+  .container-nav {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 598px) {
+  .links-container {
+    text-align: center;
+  }
+  .welcome {
+    text-align: center;
+  }
+  .input-group {
+    max-width: 75%;
+  }
+}

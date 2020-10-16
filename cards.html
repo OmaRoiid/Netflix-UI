@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Netflix | My List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cards.css">
+    <style>
+      a.nav-link {
+        font-size: 1rem;
+      }
+      .row a {
+        padding: 0 !important;
+       
+      }
+      @media screen and (min-width:500px) and  ( max-width: 999px) {
+        #dropdown-list{
+          font-size: 1rem;
+          padding: 10px 10px;
+          width: 80%;
+          margin: 135px auto;
+        }
+      }
+      @media screen and (max-width:500px) {
+        #dropdown-list{
+          font-size: 1rem;
+          padding: 10px 10px;
+          width: 80%;
+          margin: 135px auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+			id="nav"
+			class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html" style="width: 75px">
+					<img
+						class="img-fluid"
+						src="images/Netflix-Logo.png"
+						alt="logo-netflix"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">TV Shows</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Movies</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Latest</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">My List</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link mr-2" href="#">
+								<i class="fas fa-search"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link mr-2" href="refer/refer.html">
+								<i class="fas fa-gift"></i>
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle notification"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<i class="fas fa-bell"></i>
+							</a>
+							<div
+								class="dropdown-menu drop-notification"
+								aria-labelledby="navbarDropdown"
+							>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie1.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie2.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie3.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+								<a class="dropdown-item" href="#">
+									<div
+										class="w-100 px-5 d-flex justify-content-around align-items-center"
+									>
+										<img class="img-fluid" src="images/movie1.jpg" alt="pp" />
+										<p class="text-white w-100 ml-1">
+											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+											Voluptates, nulla.
+										</p>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<img class="img-fluid" src="images/pp.png" alt="pp" />
+							</a>
+							<div
+								class="dropdown-menu drop-profile"
+								aria-labelledby="navbarDropdown"
+								style="left: -130px"
+							>
+								<a class="dropdown-item" href="#">
+									<img class="img-fluid" src="images/pp.png" alt="pp" />
+									<span class="text-white ml-1">User 1</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img class="img-fluid" src="images/pp2.png" alt="pp" />
+									<span class="text-white ml-1">User 2</span>
+								</a>
+								<a class="dropdown-item" href="#">
+									<img class="img-fluid" src="images/pp.png" alt="pp" />
+									<span class="text-white ml-1">User 3</span>
+								</a>
+								<a class="dropdown-item" href="#">Manage Profiles</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="account.html">Account</a>
+								<a class="dropdown-item" href="helpcenter.html">Help Center</a>
+								<a class="dropdown-item" href="#">Sign out of Netflix</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    <div class="container pt-5">
+    <div class="row ml-5 justify-content-between">
+      <div class=" film-text">
+        <span class="font-weight-bold" style="font-size: 2rem;">Film</span>
+     
+      <!-- dropdown List  -->
+      <div class="dropdown ml-3 " >
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Genres
+        </button>
+        <div class="dropdown-menu  "id="dropdown-list" aria-labelledby="dropdownMenuButton">
+          <div class="row ml-1">
+            <a class="text-white col-lg-4" href="#" >Action</a>
+          <a class="text-white col-lg-4" href="#" >Dramas</a>
+          <a class="text-white col-lg-4" href="#">Kids & Family</a>
+          </div>
+          <div class="row ml-1">
+            <a class="text-white col-lg-4" href="#" >Anime</a>
+          <a class="text-white col-lg-4" href="#" >Egyptian Movies</a>
+          <a class=" text-white col-lg-4" href="#">Music & Musicals</a>
+          </div>
+          <div class="row ml-1">
+            <a class="text-white col-lg-4" href="#" >Arabic Nostalgia</a>
+          <a class="text-white col-lg-4" href="#" >Fantasy </a>
+          <a class="text-white col-lg-4" href="#">Romance </a>
+          </div>
+          <div class="row ml-1">
+            <a class=" text-white col-lg-4" href="#" >Award-Winning</a>
+          <a class=" text-white col-lg-4" href="#" >Halloween</a>
+          <a class=" text-white col-lg-4" href="#">Sci-Fi</a>
+          </div>
+          <div class="row ml-1">
+            <a class=" text-white col-lg-4" href="#" >Classics</a>
+          <a class=" text-white col-lg-4" href="#" >History</a>
+          <a class=" text-white col-lg-4" href="#">Science & Nature </a>
+          </div>
+          <div class="row ml-1">
+            <a class=" text-white col-lg-4" href="#" >Comedies</a>
+          <a class=" text-white col-lg-4" href="#" >Hollywood </a>
+          <a class=" text-white col-lg-4" href="#">Sports</a>
+          </div>
+          <div class="row ml-1">
+            <a class=" text-white col-lg-4" href="#" >Crime</a>
+          <a class=" text-white col-lg-4" href="#" >Horror</a>
+          <a class=" text-white col-lg-4" href="#">Stand-up Comedy </a>
+          </div>
+          <div class="row ml-1">
+            <a class=" text-white col-lg-4" href="#" >Documentaries</a>
+          <a class=" text-white col-lg-4" href="#" >Independent</a>
+          <a class=" text-white col-lg-4" href="#">Thriller</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- filter -->
+ 
+      <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Suggestions for you
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="filter-list">
+          <a class="text-light ml-3" type="button">Suggestions for you</a>
+          <a class="text-light ml-3" type="button">Year Released</a><br>
+          <a class="text-light ml-3" type="button">A-Z</a><br>
+          <a class="text-light ml-3" type="button">Z-A</a>
+     
+        </div>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+ <div class="container-fluid">
+  
+    <!-- Fim Cards  -->
+   <div class="row justify-content-center">
+    <ul class="items ">
+        <li>
+            <img class="bg-img" src="./images/meet joe.jpg">
+        </li>
+        <li>
+            <img class="bg-img" src="./images/vikings.jpg">
+        </li>     
+        <li >
+          <img class="bg-img" src="./images/batman-begins-4k-rn.jpg">
+        </li>
+         <li>
+               <img class="bg-img" src="./images/lastCastle.jpg">
+        </li>
+        
+        <li>
+            <img class="bg-img" src="./images/182712.jpg">
+        </li>
+    </ul>
+   </div>
+   <div class="row justify-content-center">
+    <ul class="items ">
+      <li>
+        <img class="bg-img" src="./images/182712.jpg">
+      </li>
+      <li >
+        <img class="bg-img" src="./images/batman-begins-4k-rn.jpg">
+      </li>
+      <li>
+        <img class="bg-img" src="./images/vikings.jpg">
+      </li>
+      <li>
+        <img class="bg-img" src="./images/meet joe.jpg">
+      </li>
+      <li>
+        <img class="bg-img" src="./images/lastCastle.jpg">
+      </li>
+        
+        
+    </ul>
+  </div>
+  <div class="row justify-content-center">
+    <ul class="items ">
+      <li>
+          <img class="bg-img" src="./images/182712.jpg">
+      </li>
+      <li>
+        <img class="bg-img" src="./images/vikings.jpg">
+      </li>
+      
+      <li>
+        <img class="bg-img" src="./images/lastCastle.jpg">
+      </li>
+       <li>
+            <img class="bg-img" src="./images/meet joe.jpg">
+       </li>
+        <li >
+            <img class="bg-img" src="./images/batman-begins-4k-rn.jpg">
+        </li>
+        
+    </ul>
+   </div>
+   
+   <div class="row justify-content-center mt-3">
+     <ul class="items ">
+       <li>
+           <img class="bg-img" src="./images/batman-begins-4k-rn.jpg">
+       </li>
+       <li>
+            <img class="bg-img" src="./images/meet joe.jpg">
+        </li>
+        
+        <li>
+            <img class="bg-img" src="./images/vikings.jpg">
+
+        </li>
+        <li>
+            <img class="bg-img" src="./images/182712.jpg">
+            
+        </li>
+        
+        <li>
+            <img class="bg-img" src="./images/lastCastle.jpg">
+        </li>
+        
+        
+    </ul>
+   </div>
+ </div>
+ <footer>
+    <div class="container mt-3 justify-content-center">
+      <div class="row ml-4">
+        <div class="col 3">
+          <div class="row">
+            <a href="#"
+              ><span class="fab fa-facebook-square col-3"></span
+            ></a>
+            <a href="#"
+              ><span class="fab fa-instagram-square col-3"></span
+            ></a>
+            <a href="#"><span class="fab fa-twitter col-3"></span></a>
+            <a href="#"><span class="fab fa-youtube col-3"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li>
+              <a href="#">
+                <span>Audio and Subtitles</span>
+              </a>
+            </li>
+            <li>
+              <a href="helpcenter.html">
+                <span>Media Centre</span>
+              </a>
+            </li>
+            <li>
+              <a href="terms.html">
+                <span>Privacy</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <span>Contact Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <button type="button" class="btn btn-outline-dark">
+                  Service Code
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li>
+              <a href="helpcenter.html">
+                <span>Help Centre</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Jobs</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Cookie Preferences</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li>
+              <a href="terms.html">
+                <span>Terms of Use</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Gift Cards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Reams of Use</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Corporate Information</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <span class="copy-right ml-5 "
+          >&copy; 1997-2020 Netflix, Inc.(i-0d-09)</span
+        >
+      </div>
+    </div>
+ 
+  </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

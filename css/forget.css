@@ -1,0 +1,159 @@
+body {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg");
+  background-repeat: no-repeat;
+}
+.overlay {
+  z-index: -1;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; /* order in case you're using a different order for other elements */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.logo {
+  height: 100px;
+  z-index: 1;
+}
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+.container {
+  height: 100%;
+  align-content: center;
+}
+
+.card {
+  height: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 450px;
+  background-color: white;
+}
+.card-headerr {
+  padding: 25px 25px;
+}
+
+.card-headerr h3 {
+  color: black;
+  margin-top: 10px;
+}
+.card-headerr h6 {
+  margin-top: 20px;
+}
+
+.reset-choice-container {
+  margin-left: 25px;
+}
+
+input[type="radio"] {
+  border: 0px;
+  width: 10%;
+  height: 1.5em;
+}
+input:required {
+  border: 1px solid red;
+}
+label {
+  margin-bottom: 30px;
+}
+.input-password-input,
+.ui-text-input {
+  margin-top: 10px;
+  margin-left: 18px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: solid 1px #b3b3b3;
+  border-radius: 2px;
+  display: block;
+  appearance: none;
+  width: 95%;
+  max-width: 500px;
+  color: #000;
+  padding: 10px 11px;
+  height: 44px;
+}
+.submit {
+  margin-top: 20px;
+  margin-left: 18px;
+  width: 95%;
+}
+.card {
+  background-color: #ececec;
+}
+.card a {
+  margin-left: 45px;
+}
+.card a:hover {
+  cursor: pointer;
+}
+footer {
+  margin-top: 30px;
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  height: 240px;
+  background: black;
+  opacity: 0.6;
+  justify-content: center;
+}
+
+footer .about {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+footer .about a {
+  color: white;
+}
+footer .about a:hover {
+  cursor: pointer;
+}
+footer .dropdown {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+footer .dropdown button {
+  background-color: black;
+  background-image: none;
+}
+footer .dropdown .dropdown-menu {
+  background-color: black;
+}
+footer .dropdown .dropdown-menu a {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+}
+@media screen and (max-width: 500px) {
+  .card-headerr h3 {
+    color: black;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  .card-headerr h6 {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  .reset-choice-container {
+    margin-left: 15px;
+  }
+  input[type="radio"] {
+    border: 0px;
+    width: 10%;
+    height: 1.2em;
+  }
+  .ui-text-input {
+    margin-top: 5px;
+  }
+  .submit {
+    margin-top: 10px;
+    margin-left: 18px;
+    width: 95%;
+  }
+  .card a {
+    font-size: 0.9rem;
+  }
+}

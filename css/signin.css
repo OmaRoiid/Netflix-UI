@@ -1,0 +1,160 @@
+body {
+  background-image: url("../img/netflix_background.jpg");
+  background-repeat: no-repeat;
+}
+.overlay {
+  height: auto;
+  z-index: -1;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; /* order in case you're using a different order for other elements */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.logo {
+  height: 100px;
+  z-index: 1;
+}
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+.container {
+  height: 100%;
+  align-content: center;
+}
+
+.card {
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.card-header h3 {
+  color: white;
+}
+.card-body {
+  padding: 45px 35px;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn {
+  margin-top: 20px;
+  color: white;
+  background-color: red;
+  width: 100%;
+}
+.remember {
+  margin-left: 8px;
+  color: white;
+  font-size: 11px;
+}
+.remember .input {
+  margin-top: 10px;
+}
+.remember a {
+  margin-top: 10px;
+  text-align: end;
+  color: white;
+}
+.remember a:hover {
+  cursor: pointer;
+}
+.facebook {
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.facebook img {
+  width: 23px;
+  height: 23px;
+}
+.facebook p {
+  margin-left: 5px;
+  color: #737373;
+  font-size: 0.9rem;
+}
+.new {
+  color: #737373;
+  margin-left: 5px;
+}
+.new a {
+  color: white;
+}
+.new a:hover,
+.about-google a:hover {
+  cursor: pointer;
+}
+.about-google {
+  margin-left: 5px;
+  color: #737373;
+  font-size: 00.8rem;
+}
+.about-google a {
+  color: blue;
+}
+
+footer {
+  height: auto !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  height: 240px;
+  background: black;
+  opacity: 0.8;
+  justify-content: center;
+}
+
+footer .about {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+footer .about a {
+  color: white;
+}
+footer .about a:hover {
+  cursor: pointer;
+}
+footer .dropdown {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+footer .dropdown button {
+  background-color: black;
+  background-image: none;
+}
+footer .dropdown .dropdown-menu {
+  background-color: black;
+}
+footer .dropdown .dropdown-menu a {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+}
+@media screen and (max-width: 320px) {
+  .outter {
+    padding: 0;
+  }
+  .card-body {
+    padding: 0;
+  }
+  footer .outter a {
+    font-size: 1rem;
+  }
+  footer .about {
+    margin-top: 10px;
+  }
+  footer .about .links a {
+    font-size: 0.8rem;
+  }
+}
